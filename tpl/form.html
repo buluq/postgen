@@ -1,0 +1,46 @@
+<div class="uk-container uk-container-center">
+    <include href="page-header.html" />
+    <form class="uk-form uk-form-horizontal uk-margin-bottom" method="post" name="generator" idaction="{{ @BASE.@PARAMS.0 }}">
+        <div class="uk-form-row">
+            <label class="uk-form-label" for="produk_nama">Produk</label>
+            <div class="uk-form-controls">
+                <input class="uk-width-1-1" type="text" name="produk_nama" placeholder="Nama produk">
+            </div>
+        </div>
+        <div class="uk-form-row">
+            <label class="uk-form-label" for="produk_kategori">Kategori</label>
+            <div class="uk-form-controls">
+                <input class="uk-width-1-1" type="text" name="produk_kategori" placeholder="Kategori produk">
+            </div>
+        </div>
+        <div class="uk-form-row">
+            <label class="uk-form-label" for="produk_deskripsi">Ikhtisar</label>
+            <div class="uk-form-controls">
+                <textarea class="uk-width-1-1" name="produk_deskripsi" rows="4" placeholder="Ikhtisar produk"></textarea>
+            </div>
+        </div>
+        <div class="uk-form-row">
+            <label class="uk-form-label" for="produk_fitur">Fitur</label>
+            <div class="uk-form-controls">
+                <textarea class="uk-width-1-1" name="produk_fitur" rows="10" placeholder="Daftar fitur produk"></textarea>
+            </div>
+        </div>
+        <div class="uk-form-row">
+            <label class="uk-form-label" for="produk_spesifikasi">Spesifikasi</label>
+            <div class="uk-form-controls">
+                <textarea class="uk-width-1-1" name="produk_spesifikasi" rows="10" placeholder="Spesifikasi produk"></textarea>
+            </div>
+        </div>
+        <div class="uk-form-row">
+            <label class="uk-form-label" for="produk_tag">Spesifikasi</label>
+            <div class="uk-form-controls">
+                <input class="uk-width-1-1" type="text" name="produk_tag" placeholder="Daftar tag">
+            </div>
+        </div>
+        <div class="uk-form-row">
+            <div class="uk-form-controls">
+                <input class="uk-button uk-button-primary uk-width-1-1" type="submit" name="generate" value="Jadikan HTML">
+            </div>
+        </div>
+    </form>
+</div>

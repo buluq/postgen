@@ -1,0 +1,36 @@
+<div class="uk-container uk-container-center">
+    <include href="page-header.html" />
+    <textarea class="uk-width-1-1" rows="32">
+        <header style="border-bottom: 1px solid Black;">
+            <h2 style="text-align: center;">
+                <a style="color: blue;" href="http://digital-meter-indonesia.com/{{ @produk_slug }}">{{ @produk_nama }}</a>
+            </h2>
+            <p style="text-align: right;">Kategori: <a style="color: blue;" href="http://digital-meter-indonesia.com/category/{{ @produk_kategori_slug }}">{{ @produk_kategori }}</a></p>
+        </header>
+
+        {{ @produk_deskripsi }}
+
+        <h3>Fitur {{ @produk_nama }}</h3>
+        {{ @produk_fitur }}
+
+        <h3>Spesifikasi {{ @produk_nama }}</h3>
+        {{ @produk_spesifikasi }}
+    </textarea>
+    <div class="uk-panel uk-panel-header uk-panel-box uk-margin-top">
+        <h2 class="uk-panel-title">Hasil Jadi</h2>
+        <header style="border-bottom: 1px solid Black;">
+            <h2 style="text-align: center;">
+                <a style="color:Blue;" href="http://digital-meter-indonesia.com/{{ @produk_slug }}">{{ @produk_nama }}</a>
+            </h2>
+            <p style="text-align: right;">Kategori: <a style="color: blue;" href="http://digital-meter-indonesia.com/category/{{ @produk_kategori_slug }}">{{ @produk_kategori }}</a></p>
+        </header>
+
+        {{ @produk_deskripsi | raw }}
+
+        <h3>Fitur {{ @produk_nama }}</h3>
+        {{ @produk_fitur | raw }}
+
+        <h3>Spesifikasi {{ @produk_nama }}</h3>
+        {{ @produk_spesifikasi | raw }}
+    </div>
+</div>
